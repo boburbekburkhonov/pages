@@ -4,23 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Pages</title>
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="#">
+                <img src="./images/logo.svg" alt="logo" width="119" height="35">
+            </a>
 
+
+            <!-- SITENAV -->
+            <nav class="sitenav justify-content-between align-items-center">
+                <div class="sitenav__cites">
+                    <a class="header__cites-logo" href="#">
+                        <img src="./images/facebook.png" alt="facebook" width="45" height="45">
+                    </a>
+                    <a class="header__cites-logo" href="#">
+                        <img src="./images/twitter.png" alt="facebook" width="45" height="45">
+                    </a>
+                    <a class="header__cites-logo" href="#">
+                        <img src="./images/linklendlin.png" alt="facebook" width="45" height="45">
+                    </a>
+                </div>
+
+                <ul class="sitenav__list list-unstyled d-flex">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link text-decoration-none" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="sitenav__item">
+                        <a class="sitenav__link text-decoration-none" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="sitenav__item">
+                        <a class="sitenav__link text-decoration-none" href="#">
+                            Pages
+                        </a>
+                    </li>
+
+                    <li class="sitenav__item">
+                        <a class="sitenav__link text-decoration-none" href="#">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+
+                <img src="./images/korzinka.png" alt="korzinka" width="17" height="17">
+
+                <a class="button sitenav__btn">Order Today</a>
+
+            </nav>
+            <button class="header__hamburger"></button>
+        </div>
     </header>
     <!-- MAIN -->
     <main class="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__right">
+                    <p class="hero__right-desc-small hero__right-desc-small-yellow mb-3">
+                        Welcome to Pages!!!
+                    </p>
 
+                    <p class="hero__right-desc">
+                        Your Books From
+                    </p>
+
+                    <p class="hero__right-desc mb-4">
+                        The Best Writer.
+                    </p>
+
+                    <p class="hero__right-desc-small">
+                        We believe that reading books are essential to a healthy culture.
+                    </p>
+
+                    <p class="hero__right-desc-small hero__right-desc-small-margin">
+                        They’re where authors can connect with readers.
+                    </p>
+
+                    <a class="button hero__right-btn" href="#">
+                        order today
+                    </a>
+
+                    <a class="hero__right-button" href="#">
+                        Read Free Demo
+                    </a>
+
+                    <ul class="hero__right-list list-unstyled">
+                        <li class="hero__right-item">
+                            <p class="hero__right-list-desc">
+                                Pages:
+                            </p>
+                            <p class="hero__right-list-desc-small">
+                                250pages
+                            </p>
+                        </li>
+
+                        <li class="hero__right-item">
+                            <p class="hero__right-list-desc">
+                                Length::
+                            </p>
+                            <p class="hero__right-list-desc-small">
+                                10 Hours
+                            </p>
+                        </li>
+
+                        <li class="hero__right-item">
+                            <p class="hero__right-list-desc">
+                                Rating::
+                            </p>
+                            <p class="hero__right-list-desc-small">
+                                4.5/5 (305 ratings)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="./images/darklight.png" alt="darklight" width="592" height="800">
+            </div>
+        </section>
+        <!-- BOOKS -->
+        <section class="books">
+            <div class="container">
+                <h2 class="books__heading">
+                    The Author’s Book
+                </h2>
+                <div class="books__line"></div>
+
+                <ul class="books__list list-unstyled">
+                    <li class="books__item">
+                        <img src="./images/book.png" alt="book" width="285" height="382">
+
+                        <div class="books__list-wrapper">
+                            <h3 class="books__list-heading">
+                                Atomic One’s
+                            </h3>
+
+                            <span class="books__list-span">
+                                $ 13.84 USD
+                            </span>
+
+                            <p class="books__list-desc">
+                                As the book contains theoretical content as well as solved questions.
+                            </p>
+
+                            <p class="books__list-desc-big">
+                                Printed Book
+                            </p>
+
+                            <a class="books__list-btn text-decoration-none" href="#">
+                                Order Now
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="books__item">
+                        <img src="./images/dark.png" alt="book" width="285" height="382">
+
+                        <div class="books__list-wrapper">
+                            <h3 class="books__list-heading">
+                                The Dark Light
+                            </h3>
+
+                            <span class="books__list-span">
+                                $ 86.11 USD
+                            </span>
+
+                            <p class="books__list-desc">
+                                As the book contains theoretical content as well as solved questions.
+                            </p>
+
+                            <p class="books__list-desc-big">
+                                Printed Book
+                            </p>
+
+                            <a class="books__list-btn text-decoration-none" href="#">
+                                Order Now
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
 
     </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/apps.js"></script>
 </body>
 </html>

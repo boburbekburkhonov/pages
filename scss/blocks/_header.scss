@@ -1,1 +1,203 @@
 // bu yerda header bor
+.header {
+  background: #1B3764;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    text-decoration: none;
+    transition: all 0.7s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__cites-logo {
+    text-decoration: none;
+    transition: all 0.7s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+
+  &__hamburger {
+    display: none;
+    border: none;
+    background-color: #1B3764;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/hamburger.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__cites-logo {
+    margin-left: 10px;
+  }
+
+}
+
+.sitenav {
+  display: flex;
+
+  &__cites {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin-left: 260px;
+  }
+
+  &__item + &__item {
+    margin-left: 47px;
+  }
+
+  &__link {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.17px;
+    color:  #F6F8FC;;
+    transition: all 0.7s;
+
+    &:hover {
+      color: #FFCA42;;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  & > img {
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 1290px) {
+
+  .sitenav {
+
+    &__list {
+      margin-left: 160px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1201px) {
+
+  .sitenav {
+
+    &__cites {
+      display: none;
+    }
+
+    &__list {
+      margin-left: 60px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+  .header {
+    position: relative;
+
+    &__hamburger {
+      display: inline-block;
+    }
+
+  }
+
+  .sitenav {
+    display: none;
+
+    &__cites {
+      display: inline-block;
+      margin-bottom: 50px;
+    }
+
+    &__list {
+      margin-bottom: 50px;
+      margin-left: 0;
+    }
+
+    &__link {
+      color: black;
+      font-weight: 600;
+    }
+
+    & > img {
+      margin-bottom: 50px;
+    }
+  }
+
+  .header--open .sitenav {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 75%;
+    background-color: #478eff;
+    z-index: 99;
+  }
+
+  .header--open .header__hamburger {
+    background-image: url(../../images/closed.png);
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+
+  .sitenav {
+
+    &__item {
+      text-align: center;
+    }
+
+    &__item + &__item {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+  }
+
+  .header--open .sitenav__list {
+    flex-direction: column;
+  }
+
+}

@@ -1,1 +1,25 @@
 // bu yerda button bor
+.button {
+  text-decoration: none;
+  padding: 18px 52px;
+  background: #FFCA42;
+  border: 2px solid #FFCA42;
+  font-family: 'Cardo';
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  color: #1B3764;
+  transition: all 0.7s;
+  max-width: 222px;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

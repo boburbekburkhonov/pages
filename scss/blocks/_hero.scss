@@ -146,6 +146,11 @@
 
   .hero {
 
+    &__right-desc {
+      font-size: 40px;
+      line-height: 60px;
+    }
+
     &__right-item + &__right-item {
       margin-left: 20px;
     }

@@ -1,0 +1,169 @@
+.author {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background: #F5F8FC;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right {
+    max-width: 605px;
+
+    &-heading {
+      margin: 0;
+      margin-bottom: 23px;
+      font-family: 'Cardo';;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 50px;
+      text-transform: capitalize;
+      color: #1B3764;
+    }
+
+    &-span {
+      display: inline-block;
+      width: 50px;
+      height: 3px;
+      background: #FFCA42;
+      margin-bottom: 33px;
+    }
+
+    &-desc {
+      margin: 0;
+      margin-bottom: 34px;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 34px;
+      color: #969AA0;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      margin-bottom: 70px;
+      padding: 0;
+
+      &-desc-number {
+        margin: 0;
+        font-family: 'Cardo';
+        font-style: normal;
+        font-size: 54px;
+        line-height: 77px;
+        color: #1B3764;
+      }
+
+      &-desc {
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 17px;
+        line-height: 22px;
+        color: #969AA0;
+      }
+
+      &-span {
+        display: inline-block;
+        width: 1px;
+        height: 98px;
+        background: #FFCA42;
+        margin-left: 35px;
+      }
+    }
+
+    &-item {
+      display: flex;
+
+    }
+
+    &-man {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #1B3764;
+      max-width: 484px;
+
+      &-john-desc-name {
+        margin: 0;
+        margin-bottom: 11px;
+        font-family: 'Cardo';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFCA42;
+      }
+
+      &-john-desc-email {
+        margin: 0;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.19px;
+        color: #B4C7E7;
+      }
+
+      &-john-desc-phone {
+        margin: 0;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.19px;
+        color: #B4C7E7;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1210px) {
+
+  .author {
+
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__right {
+      text-align: center;
+      margin-top: 30px;
+
+      &-man {
+        width: 100%;
+      }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 427px) {
+
+  .author {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__right {
+
+      &-man {
+        flex-direction: column;
+
+        & > img {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+  }
+
+}

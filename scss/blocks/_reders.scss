@@ -1,0 +1,156 @@
+.reders {
+  padding-top: 120px;
+  padding-bottom: 130px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    max-width: 468px;
+    margin-right: 30px;
+  }
+
+  &__heading {
+    max-width: 329px;
+    margin: 0;
+    margin-bottom: 23px;
+    font-family: 'Cardo';
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #1B3764;
+  }
+
+  &__line {
+    margin: 0;
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    height: 3px;
+    background: #FFCA42;
+    margin-bottom: 33px;
+  }
+
+  &__desc {
+    max-width: 435px;
+    margin: 0;
+    margin-bottom: 14px;
+    font-family: 'Inter';
+    font-size: 19px;
+    line-height: 34px;
+    color: #969AA0;
+  }
+
+  &__line-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__line-span {
+    margin-left: 10px;
+    font-family: 'Cardo';
+    font-size: 22px;
+    line-height: 26px;
+    color: #1B3764;
+  }
+
+  &__desc-small {
+    margin: 0;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 28px;
+    color: #1B3764;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin: -10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    &-heading {
+      margin: 0;
+      margin-bottom: 13px;
+      font-family: 'Cardo';
+      font-size: 22px;
+      line-height: 33px;
+      color: #FFFFFF;
+    }
+
+    &-desc {
+      margin: 0;
+      font-family: 'Inter';
+      font-size: 18px;
+      line-height: 29px;
+      color: #B4C7E7;
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &-text-wrapper {
+        margin-left: 20px;
+      }
+
+      &-heading {
+        margin: 0;
+        margin-bottom: 15px;
+        font-family: 'Cardo';
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &__item {
+    margin: 10px;
+    padding: 30px 35px 24px 35px;
+    max-width: 381px;
+    background: #1B3764;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.11);
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .reders {
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left {
+      max-width: 668px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+    }
+
+    &__list {
+      max-width: 900px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .reders {
+
+    &__list {
+      max-width: 400px;
+    }
+
+  }
+
+}

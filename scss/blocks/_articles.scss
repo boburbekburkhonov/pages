@@ -1,0 +1,141 @@
+.articles {
+  padding-top: 126px;
+  padding-bottom: 150px;
+  background: #F4F8FF;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 23px;
+    font-family: 'Cardo';
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B3764;
+  }
+
+  &__line {
+    margin: 0;
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background: #FFCA42;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-text-wrapper {
+      padding: 0 30px 30px 30px;
+    }
+
+    &-heading {
+      margin: 0;
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-family: 'Cardo';
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0.24px;
+      color: #1B3764;
+    }
+
+    &-desc {
+      margin: 0;
+      margin-bottom: 13px;
+      font-family: 'Inter';
+      font-size: 19px;
+      line-height: 30px;
+      color: #969AA0;
+    }
+
+    &-bottom{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-btn {
+      font-family: 'Cardo';
+      font-size: 19px;
+      line-height: 23px;
+      letter-spacing: 0.38px;
+      text-transform: capitalize;
+      color: #1B3764;
+      background-color: white;
+      border: none;
+      border-bottom: 2px solid #1B3764;;
+    }
+
+    &-data {
+      margin: 0;
+      font-family: 'Inter';
+      font-size: 16px;
+      line-height: 26px;
+      color: #1B3764;
+    }
+  }
+
+  &__item {
+    max-width: 420px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .articles {
+
+    &__item:nth-child(3){
+      margin-top: 50px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 993px) {
+
+  .articles {
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      max-width: 668px;
+
+      & > img {
+        width: 668px;
+      }
+
+      &__item:nth-child(3){
+        margin-top: 0px;
+      }
+
+      & + & {
+        margin-top: 50px;
+      }
+    }
+
+
+  }
+
+}

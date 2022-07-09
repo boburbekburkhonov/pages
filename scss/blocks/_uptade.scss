@@ -1,0 +1,136 @@
+.uptade {
+  padding: 120px 0;
+
+
+  &__container {
+    padding-top: 96px;
+    padding-right: 150px;
+    padding-bottom: 94px;
+    padding-left: 150px;
+    background: #FFCA42;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 23px;
+    font-family: 'Cardo';
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1B3764;
+  }
+
+  &__line {
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    height: 3px;
+    background: #1B3764;
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    max-width: 550px;
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #1B3764;
+  }
+
+  &__input {
+    max-width: 656px;
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 488px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    background: #FFFFFF;
+    border: 2px solid #DCE1E9;
+
+    &::placeholder {
+      font-family: 'Inter';
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.18px;
+      color: #B4C7E7;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid #DCE1E9;
+    }
+  }
+
+  &__btn {
+    max-width: 328px;
+    margin-left: 16px;
+    background: #1B3764;
+    border: 2px solid #1B3764;
+    padding: 16px 120px;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.18px;
+    color: #FFFFFF;
+  }
+
+}
+
+@media only screen and (max-width: 1307px) {
+  .uptade {
+
+    &__heading {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__input {
+      padding-right: 0px;
+    }
+
+    &__btn {
+      margin-top: 30px;
+      padding: 10px 90px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 507px) {
+
+  .uptade {
+
+    &__heading {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+  }
+
+}

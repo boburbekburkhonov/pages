@@ -1,1 +1,152 @@
 // bu yerda footer bor
+.footer {
+  padding-top: 60px;
+  padding-bottom: 75px;
+  background: #1B3764;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__cites-link {
+    margin-top: 20px;
+  }
+
+  &__cites-link {
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+    &-link-active {
+      margin-bottom: 15px;
+      display: inline-block;
+      font-family: 'Cardo';
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0.384px;
+      color: #FFFFFF;
+    }
+
+    &-link-small {
+      display: inline-block;
+      font-family: 'Inter';
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.18px;
+      color: #B4C7E7;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        width: 18px;
+        height: 4px;
+        background-image: url(../../images/footer-yellow.png);
+        position: relative;
+        top: -5px;
+      }
+
+    }
+
+    &-link-last {
+      display: inline-block;
+      font-family: 'Inter';
+      font-size: 18px;
+      line-height: 31px;
+      letter-spacing: 0.18px;
+      color: #B4C7E7;
+    }
+
+    &-desc {
+      max-width: 234px;
+      margin: 0;
+      margin-left: 18px;
+      font-family: 'Inter';
+      font-size: 17px;
+      line-height: 27px;
+      color: #B4C7E7;
+    }
+  }
+
+  &__item {
+    transition: all 0.4s;
+
+    &-last {
+      display: flex;
+
+      & + & {
+        margin-top: 27px;
+      }
+    }
+  }
+
+  &__last-desc {
+    margin: 0;
+    margin-top: 80px;
+    font-family: 'Inter';
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.17px;
+    color: #B4C7E7;
+
+    &-active {
+      font-family: 'Inter';
+      font-size: 17px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.17px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .footer {
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__list-link-active {
+      margin-top: 40px;
+    }
+
+    &__list + &__list {
+      margin-top: 40px;
+    }
+
+  }
+
+}
